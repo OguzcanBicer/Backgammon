@@ -1,0 +1,36 @@
+1306140049 Nolu Oğuzcan biçer tarafından yapılmıştır.
+
+KAZANMAK ICIN = 888
+YENI OYUN ICIN = 999 giriniz.
+
+Java programlama dili kullanılmıştır.
+Derleyici olarak Intellij kullandım.
+
+Oluşturulan dosyalar, dıceLog.txt ve Table.dat
+
+Not: console app olarak yaptım, javada malesef konsolu silme diye birşey yok (en azından ben bulamadım).
+
+Yeni oyuna başlamak için Start veya Destination inputlarından birine 999 yazılmalı. Veya dosyaları silersek veya bozarsak yine yeni oyuna başlayacaktır.
+
+
+Kisaca Genel bilgi
+BackgammonApp.java yi calistiriyoruz. Main Class
+
+BackgammonController.java : Genel methodları çalıştırır. Start, finishGame, NewGame // Backgammon ve BackgammonView sınıfları tanımlı
+	InputController: Klavyeden girilen inputları kontrol eder.
+	ReadFile: dosyalardan veri okumayı sağlayan sınıf
+	WriteFile: dosyalara veri yazan sınıf.
+------------------------------------------------
+Backgammon.java : Tüm methodlar genelde bu sınıfın içerisinde. Pozisyon kontrolu, taşı hareket ettirme, Zarları silme gibi tüm angarya işleri bu sınıf yapar.
+
+Board: Oyun tahtasi, yeni oyun patterni burada, load game icin gerekli bilgileri alabilecek methodlar burada
+
+Dice: zar atilir. Cift ise 4 tane zar tanimlanir. Her oynana zar silinir. Zar sayisi 0 olunca tur atlanir.
+
+Player: game mode 1 oldugunda o oyuncu taslarini toplamaya baslar.
+
+Line: Board uzerindeki herbir stun bir liste icerisinde tanimli. 0=black kirik tas , 1-24 = genel tahta , 25=beyaz kirik, 26=beyaz toplanan, 27=siyah toplanan
+
+Checker: tas, taslarin kimlikleri var kime ait oldugu bellidir.
+--------------------------------------------------------------------
+BackgammonView: GUI arayuz kismidir. Arayuz methodlari vardir sadece.
