@@ -1,8 +1,2 @@
-Placement dice: (White) 4  0 (Black) -->  Black goes first.
-Black's dice: 5  3
-White's dice: 2  4
-Black's dice: 3  3
-White's dice: 1  5
-Black's dice: 4  1
-White's dice: 1  5
-Black's dice: 5  3
+Placement dice: (White) 6  0 (Black) -->  White goes first.
+White's dice: 6  1
